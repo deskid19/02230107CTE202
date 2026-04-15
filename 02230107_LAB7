@@ -1,0 +1,23 @@
+#Task 1: Implementthe Node and Binary Tree Class Structure
+class Node:
+    def __init__(self, value):
+        self.value = value        # Value of the node
+        self.left = None          # Left child reference
+        self.right = None         # Right child reference
+
+
+# Binary Tree Class
+class BinaryTree:
+    def __init__(self, root_value=None):
+        if root_value is not None:
+            self.root = Node(root_value)   # Pre-populated tree
+        else:
+            self.root = None               # Empty tree
+
+
+# Example usage
+tree = BinaryTree()
+
+print("Created new Binary Tree")
+print("Root:", tree.root)
+
